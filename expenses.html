@@ -7,12 +7,37 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>    
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
     }
   </style>
 </head>
@@ -31,86 +56,110 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="landing.html">Home</a></li>
-        <li><a href="informationPage.html">Information</a></li>
+        <li><a href="informationPage.html">About</a></li>
+        <li><a href="fullMenu.html">Full Menu</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
-<div class="container text-center">    
-  <div class="row">
-    <div class="col-sm-3 well">
-      <div class="well">
-        <p><a href="#">My Profile</a></p>
-        <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-      </div>
-      <div class="well">
-        <p><a href="#">Interests</a></p>
+    <div class="col-sm-8 text-left"> 
+      <h1>Expenses</h1>
+      <p>
+      <bold>Start-up Summary</bold>A Café’s start-up expenses total is <bold>$99,231</bold>, or <bold>$102,821</bold> 
+        including first month labor cost. Abig portion of these funds, roughly <bold>$31,781</bold>, will be used for 
+        cooking equipment. Another <bold>$32,700</bold> will be used for the remodel of the space and <bold>$12,000</bold> for non-recurring expenses such as permits, 
+        rent and insurance deposits, alarm and phone installations. Some money will
+        be saved on the design fees. Some of the expenditures in the table below are assumed to be
+        done in conjunction with the future building owner. Phase II items are not included in the
+        start-up expenses and will be taken out of the future profit of the company. 
+      </p>
+      <ul>
+      
+      <li>
         <p>
-          <span class="label label-default">News</span>
-          <span class="label label-primary">W3Schools</span>
-          <span class="label label-success">Labels</span>
-          <span class="label label-info">Football</span>
-          <span class="label label-warning">Gaming</span>
-          <span class="label label-danger">Friends</span>
+         <bold>Help Needed:</bold>
+         Plumbing: $6,000.00
+         Electircal: $500.00
+         Venting: $10,000.00
+         Bathroom: $3,000.00
+         Grease Trap: $2,000.00
+         Water Heater-tankless: $1,000.00
+         <bold>Total: $22,500.00</bold> 
         </p>
-      </div>
-      <div class="alert alert-success fade in">
-    <div class="col-sm-7">
+        </li>
+      
+        <li>
+        <p>
+          <bold>Start-up Expenses for Interior + Exterior:</bold>
+          Custom Milwork: $15,000.00
+          Tables: $1,000.00
+          Stools (9): $900.00
+          Chairs: $5,000.00
+          Trash recptacles: $300.00
+          Paint: $200.00
+          Flooring: $5,000.00
+          Phone instillation (2 lines): $300.00
+          <bold>Total: $22,700.00</bold>
+          </p>
+        </li>
+        
+        <li>
+        <p>
+         <bold>Equipement</bold> 
+         Alarm : $400.00
+         Canopy or Umbrellas for outside: $400.00
+         Table/Chairs for ourside: $500.00
+         Lighting fixtures: $3,000.00
+         Misc. : $1,000.00
+         <bold>Total: $5,300.00</bold> 
+          </p>
+        </li>
+      <li>
+        <p>
+        <bold>Total Equipement:</bold>
+        Mop sink with faucet: $230.00
+        3 Comp. Simk: $310.50
+        Pre-rinse with added faucet: $148.11
+        Reach-in refrigerator: $2,184.31
+        Ice Maker with Water Filter: $1,580.17
+        Refrigerator: $1,399.00
+          
+        Dish Washer: $3,729.57
+        Sandwich Prep Fridge: $1,609.14
+        Radiant pass-through toaster: $700.35
+        Juice for fresh juices: $330.74  
+        Blender: $104.54  
+        Coffee machine w/ hot water: $709.78  
+        Cappuccino machine: #3,326.38  
+        Wine cooler: $341.12
+        Toaster bagel: $81.12  
+        Microwave: $293.83  
 
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>John</p>
-           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>Bo</p>
-           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>Jane</p>
-           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <p>Anja</p>
-           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>     
+         Drop-in Sink: $65.90
+         Splash Guard: $63.25
+         Hand sink with splash guard: $79.13
+         Black-bar storage/refrigerator: $2,527.32
+         Dipper-well: $115.98
+         Deli display cooler: $4,181.83
+         Sneeze Guard: $879.75
+         Crepes Maker: $1,230.27
+         Display fridges for drinks (2): $2,165.96
+         Meat slicing machine: $1,106.30
+         Total Tax (7.75%): $2,286.00 
+         <bold>Total cost for equipement: $30,673.35</bold> 
+          
+        </p>
+        
+        </li>
+        
+      </ul>
+      
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
     </div>
+    <div class="col-sm-2 sidenav">
       <div class="well">
         <p>ADS</p>
       </div>
